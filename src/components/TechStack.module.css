@@ -1,0 +1,96 @@
+.section {
+  padding: 60px 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  overflow: hidden;
+  position: relative;
+}
+
+.label {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 36px;
+}
+
+/* Infinite marquee track */
+.track {
+  position: relative;
+  overflow: hidden;
+  /* fade edges */
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 12%,
+    black 88%,
+    transparent 100%
+  );
+}
+
+.marquee {
+  display: flex;
+  gap: 12px;
+  width: max-content;
+  animation: marqueeScroll 28s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Individual tech pill */
+.techItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color);
+  padding: 12px 22px;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.techItem:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: var(--tech-color, var(--primary));
+  box-shadow: 0 0 16px color-mix(in srgb, var(--tech-color, var(--primary)) 30%, transparent);
+  transform: translateY(-3px);
+}
+
+.techIcon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.techIcon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.techName {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}

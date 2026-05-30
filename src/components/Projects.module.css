@@ -1,0 +1,325 @@
+.projectsSection {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.accentBar {
+  width: 60px;
+  height: 4px;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+  margin: 0 auto 50px auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* Left List */
+.projectsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projectCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  position: relative;
+}
+
+.projectCardActive {
+  border-color: var(--primary);
+  background: rgba(99, 102, 241, 0.05);
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
+}
+
+.cardIcon {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.cardInfo {
+  flex-grow: 1;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.cardMeta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.arrowIcon {
+  color: var(--text-muted);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.projectCardActive .arrowIcon {
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+/* Right Sticky Phone Mockup */
+.mockupContainer {
+  position: sticky;
+  top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Device Shell */
+.phoneShell {
+  width: 290px;
+  height: 590px;
+  border-radius: 40px;
+  background: #1e293b;
+  border: 10px solid #0f172a;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 
+              0 0 0 2px rgba(255, 255, 255, 0.1),
+              0 0 20px rgba(99, 102, 241, 0.2);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Dynamic Island/Speaker Notch */
+.phoneNotch {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 22px;
+  background: #000;
+  border-radius: 9999px;
+  z-index: 10;
+}
+
+/* Mock Screen Contents */
+.phoneScreen {
+  flex-grow: 1;
+  background: var(--bg-secondary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 38px 16px 16px 16px;
+  overflow-y: auto;
+}
+
+/* Scrollbar styling for mock screen */
+.phoneScreen::-webkit-scrollbar {
+  width: 4px;
+}
+.phoneScreen::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+/* Mock status bar */
+.statusBar {
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  z-index: 9;
+}
+
+.statusRight {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+/* Mock App UI Inside Phone */
+.appHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.appIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: var(--gradient-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.appTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.appPlatform {
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.appMetrics {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 8px 0;
+  margin-bottom: 16px;
+}
+
+.metricItem {
+  text-align: center;
+}
+
+.metricValue {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.metricLabel {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+}
+
+.appDescription {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.sectionTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featuresList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.featureItem {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.bullet {
+  color: var(--primary);
+  margin-top: 2px;
+}
+
+/* Store links inside Phone */
+.storeLinks {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 12px;
+}
+
+.storeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.storeBtn:hover {
+  background: var(--primary-glow);
+  border-color: var(--primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mockupContainer {
+    display: none; /* Hide device mockup on small screen to save space */
+  }
+
+  /* Expand card details on mobile since mockup is hidden */
+  .projectCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cardIcon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+
+  .arrowIcon {
+    display: none;
+  }
+}
