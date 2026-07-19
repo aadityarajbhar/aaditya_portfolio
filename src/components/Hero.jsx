@@ -74,7 +74,7 @@ export default function Hero() {
             </div>
 
             <p className={styles.description}>
-              Flutter Developer with 2.5+ years of experience building and deploying
+              Flutter Developer with 2.8+ years of experience building and deploying
               production-grade, scalable cross-platform mobile apps for iOS and Android. With
               10+ live apps on the App Store and Google Play Store, I specialize in crafting
               flawless mobile experiences and robust Node.js backends.
@@ -137,7 +137,7 @@ export default function Hero() {
           <div className={styles.statsContainer}>
             <div className={`${styles.statCard} shimmer-card`}>
               <div className={styles.statValue}>
-                <AnimatedCounter target={2.5} suffix="+" />
+                <AnimatedCounter target={2.8} suffix="+" />
               </div>
               <div className={styles.statLabel}>Years Experience</div>
             </div>

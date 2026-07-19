@@ -13,7 +13,7 @@ export default function About() {
             <div className={styles.accentBar}></div>
             <div className={styles.paragraphs}>
               <p>
-                I am a passionate <span className={styles.highlightText}>Flutter Developer</span> with 2.5+ years of 
+                I am a passionate <span className={styles.highlightText}>Flutter Developer</span> with 2.8+ years of 
                 professional experience crafting responsive, cross-platform mobile apps for Android and iOS. 
                 My focus lies in building clean interfaces, optimizing runtime performance, and ensuring a native feel.
               </p>

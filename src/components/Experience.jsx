@@ -1,6 +1,5 @@
 import { Check } from "lucide-react";
 import styles from "./Experience.module.css";
-
 const EXPERIENCES = [
   {
     role: "Flutter Developer",
@@ -33,7 +32,7 @@ const EXPERIENCES = [
       },
       {
         name: "Veroa Crew",
-        tag: "App Store",
+        tag: "App Store & Play Store",
         desc: "End-to-end photography booking platform enabling users to discover and book professional photoshoots.",
         bullets: [
           "Developed booking engine with real-time calendar availability checking",
@@ -42,12 +41,13 @@ const EXPERIENCES = [
         ]
       },
       {
-        name: "TinyMinds AI",
-        tag: "Play Store",
-        desc: "AI-powered educational application generating age-appropriate learning quizzes for children.",
+        name: "Hire Roofer",
+        tag: "App Store & Play Store",
+        desc: "A dedicated marketplace that connects homeowners, businesses, contractors, and professional roofers.",
         bullets: [
-          "Integrated Google Gemini AI for runtime quiz creation with high offline-friendly performance",
-          "Ensured strict compliance with Google Play Families Policies (ad-free, zero user tracking)"
+          "Developed job posting, quote management, and interactive map-based job discovery features",
+          "Integrated real-time messaging, secure payments, and document/certification management",
+          "Implemented comprehensive authentication including Google Sign-In, Apple Sign-In, and OTP"
         ]
       }
     ]
@@ -85,6 +85,25 @@ const EXPERIENCES = [
         bullets: [
           "Implemented advanced profile search engines with filters, favorites, and match suggestions",
           "Built premium subscription gateways and profile verification protocols"
+        ]
+      }
+    ]
+  },
+  {
+    role: "Freelance Flutter Developer",
+    company: "Independent Client Projects",
+    duration: "2024 – Present",
+    current: true,
+    summary: "Architecting and developing custom mobile applications for independent clients, handling end-to-end delivery from concept to deployment.",
+    projects: [
+      {
+        name: "DineRight",
+        tag: "Pending Release",
+        desc: "Restaurant Discovery & Booking App.",
+        bullets: [
+          "Built a comprehensive location-based restaurant search with real-time table booking",
+          "Integrated secure OTP authentication and seamless Razorpay payment processing",
+          "Engineered a clean MVC architecture utilizing Provider for state management and REST APIs"
         ]
       }
     ]

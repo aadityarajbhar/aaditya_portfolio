@@ -5,11 +5,14 @@ import { ChevronRight, Smartphone, Star, Download, Play, Check } from "lucide-re
 import styles from "./Projects.module.css";
 
 const PROJECTS = [
+
   {
     title: "Servyo",
     subtitle: "On-Demand Household Services App",
     category: "On-Demand Services",
+    themeColor: "#6366f1",
     initials: "SV",
+    icon: "/icons/Service-Provider-User-App-.png",
     metrics: { downloads: "10K+", rating: "4.8 ★", platform: "iOS & Android" },
     description: "Designed and launched a full-stack mobile app connecting users with vetted household service professionals including drivers, chefs, cleaners, and gardeners.",
     features: [
@@ -27,7 +30,9 @@ const PROJECTS = [
     title: "Servyo Partner",
     subtitle: "Service Provider App",
     category: "Companion / Business App",
+    themeColor: "#8b5cf6",
     initials: "SP",
+    icon: "/icons/Service-Provider-Partner-App.png",
     metrics: { downloads: "5K+", rating: "4.7 ★", platform: "Android" },
     description: "Launched a companion app enabling service professionals to register, manage bookings, track earnings, and grow their business on the Servyo platform.",
     features: [
@@ -44,8 +49,10 @@ const PROJECTS = [
     title: "Veroa Crew",
     subtitle: "Photography Booking Platform",
     category: "Creative Booking",
+    themeColor: "#14b8a6",
     initials: "VC",
-    metrics: { downloads: "1K+", rating: "4.9 ★", platform: "iOS" },
+    icon: "/icons/veroa_logo.png",
+    metrics: { downloads: "1K+", rating: "4.9 ★", platform: "iOS & Android" },
     description: "Designed and developed an end-to-end photography service platform enabling users to discover, book, and manage professional photoshoots seamlessly.",
     features: [
       "Scalable booking system with real-time availability and instant confirmation",
@@ -53,13 +60,16 @@ const PROJECTS = [
       "Admin chat functionality using socket-based communication",
       "Reminders and coordination for photoshoot schedules"
     ],
-    appStore: "https://apps.apple.com/in/app/veroa-crew/id6762200664"
+    appStore: "https://apps.apple.com/in/app/veroa-crew/id6762200664",
+    playStore: "https://play.google.com/store/apps/details?id=com.veroastudioz.crew"
   },
   {
     title: "Pawfect Caring",
     subtitle: "Pet Management App",
     category: "Health & Routine Tracker",
+    themeColor: "#f59e0b",
     initials: "PC",
+    icon: "/icons/pawfect_caring_app.png",
     metrics: { downloads: "5K+", rating: "4.8 ★", platform: "Android" },
     description: "An all-in-one pet care companion app helping pet owners manage daily routines, health tracking, and reminders for multiple pets in one place.",
     features: [
@@ -71,25 +81,30 @@ const PROJECTS = [
     playStore: "https://play.google.com/store/apps/details?id=com.techflux.pawfectcaring"
   },
   {
-    title: "TinyMinds AI",
-    subtitle: "Kids Educational App",
-    category: "AI / EdTech",
-    initials: "TM",
-    metrics: { downloads: "2K+", rating: "4.9 ★", platform: "Android" },
-    description: "AI-powered educational app generating dynamic quizzes on core topics using Google Gemini AI in a safe, ad-free environment.",
+    title: "Hire Roofer",
+    subtitle: "Roofing Professionals Marketplace",
+    category: "Marketplace / Business",
+    themeColor: "#ef4444",
+    initials: "HR",
+    icon: "/icons/Hire_roofer_app_flutter.png",
+    metrics: { downloads: "1K+", rating: "4.9 ★", platform: "iOS & Android" },
+    description: "A dedicated marketplace that connects homeowners, businesses, contractors, and professional roofers in one platform across Australia.",
     features: [
-      "Google Gemini AI integration for age-appropriate Math, ABC & Word quizzes",
-      "Kid-friendly UI with clean, simple navigation",
-      "Google Play Families Policy compliance (no ads, no tracking)",
-      "Offline-friendly performance for smooth learning"
+      "Job posting, multiple quote management, and roofer profile comparisons",
+      "Real-time messaging, notifications, and interactive map-based job discovery",
+      "Document, certification, and project lead management tools",
+      "Google Sign-In, Apple Sign-In, OTP authentication, and secure payments"
     ],
-    playStore: "https://play.google.com/store/apps/details?id=com.techflux.tinyminds_ai"
+    playStore: "https://play.google.com/store/apps/details?id=com.hireroofer.app",
+    appStore: "https://apps.apple.com/au/app/hire-roofer/id6776122240"
   },
   {
     title: "Marathi Biodata Maker",
     subtitle: "Biodata Creator App",
     category: "Utility / Document Creator",
+    themeColor: "#ec4899",
     initials: "BM",
+    icon: "/icons/biodata_new_app_15_2_25.png",
     metrics: { downloads: "50K+", rating: "4.6 ★", platform: "Android" },
     description: "Redesigned and rebuilt a marriage biodata maker scaling to 50K+ downloads with expanded language support and customizable templates.",
     features: [
@@ -104,7 +119,9 @@ const PROJECTS = [
     title: "Super Catalog Maker",
     subtitle: "Offline Product Catalog App",
     category: "Productivity / Business",
+    themeColor: "#3b82f6",
     initials: "SC",
+    icon: "/icons/super_catalog_app.png",
     metrics: { downloads: "5K+", rating: "4.7 ★", platform: "Android" },
     description: "Offline product catalog generator for small businesses and sales reps to create and share professional product lists entirely offline.",
     features: [
@@ -119,7 +136,9 @@ const PROJECTS = [
     title: "Image to Image Catalog",
     subtitle: "Visual Catalog App",
     category: "Productivity / Business",
+    themeColor: "#10b981",
     initials: "IC",
+    icon: "/icons/Image_to_image_catalog_app-main.png",
     metrics: { downloads: "2K+", rating: "4.5 ★", platform: "Android" },
     description: "A visual, image-based product catalog app for sales representatives to manage and access product listings on the go.",
     features: [
@@ -133,7 +152,9 @@ const PROJECTS = [
     title: "Reshimgathi Matrimony",
     subtitle: "Community Matrimony App",
     category: "Social / Community",
+    themeColor: "#f43f5e",
     initials: "RM",
+    icon: "/icons/reshimgathi_logo.png",
     metrics: { downloads: "10K+", rating: "4.6 ★", platform: "Android" },
     description: "Community-focused matrimony app for the Maratha community, enabling users to discover and connect with verified profiles.",
     features: [
@@ -143,13 +164,26 @@ const PROJECTS = [
       "Manual profile verification system for safety"
     ],
     playStore: "https://play.google.com/store/apps/details?id=dev.probity.reshimgathi"
+  },
+  {
+    title: "DineRight",
+    subtitle: "Restaurant Discovery & Booking App",
+    category: "Food & Dining",
+    themeColor: "#f97316",
+    initials: "DR",
+    icon: "/icons/Dine-Right-Generated.png",
+    metrics: { downloads: "Coming Soon", rating: "N/A", platform: "iOS & Android" },
+    description: "A comprehensive restaurant discovery platform built with Flutter. It utilizes Provider for state management, connects to a REST API backend, and follows a clean MVC architecture.",
+    features: [
+      "Location-based restaurant search with GPS for nearby recommendations",
+      "Real-time table booking and comprehensive menu exploration",
+      "Secure OTP authentication and seamless payment processing via Razorpay",
+      "Currently pending live release on App Store and Google Play"
+    ]
   }
 ];
 
 export default function Projects() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const activeProj = PROJECTS[activeIndex];
-
   return (
     <section id="projects" className={`section-padding ${styles.projectsSection}`}>
       <div className="container">
@@ -163,144 +197,54 @@ export default function Projects() {
         </div>
 
         <div className={styles.grid}>
-          {/* Left Column: Projects List */}
-          <div className={styles.projectsList}>
-            {PROJECTS.map((proj, idx) => (
-              <div key={idx}>
-                <div
-                  className={`${styles.projectCard} ${
-                    activeIndex === idx ? styles.projectCardActive : ""
-                  }`}
-                  onClick={() => setActiveIndex(idx)}
-                >
-                  <div className={styles.cardIcon}>{proj.initials}</div>
-                  <div className={styles.cardInfo}>
-                    <h3 className={styles.cardTitle}>{proj.title}</h3>
-                    <p className={styles.cardMeta}>
-                      {proj.category} • {proj.metrics.platform}
-                    </p>
-                  </div>
-                  <ChevronRight className={styles.arrowIcon} size={20} />
+          {PROJECTS.map((proj, idx) => (
+            <div
+              key={idx}
+              className={styles.projectCard}
+              style={{ "--item-color": proj.themeColor }}
+            >
+              <div className={styles.cardHeader}>
+                <div className={styles.cardIcon} style={{ background: `linear-gradient(135deg, ${proj.themeColor}, #000000)` }}>
+                  {proj.icon ? (
+                    <img src={proj.icon} alt={`${proj.title} icon`} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: 'inherit' }} />
+                  ) : (
+                    proj.initials
+                  )}
                 </div>
-
-                {/* Mobile Expansion (only visible on mobile layout) */}
-                <div className="mobile-only-details" style={{ display: "none" }}>
-                  <div style={{ padding: "16px", background: "rgba(255,255,255,0.02)", border: "1px solid var(--border-color)", borderTop: "none", borderRadius: "0 0 12px 12px", marginBottom: "16px" }}>
-                    <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", marginBottom: "12px" }}>{proj.description}</p>
-                    <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "6px", marginBottom: "16px" }}>
-                      {proj.features.map((feat, fIdx) => (
-                        <li key={fIdx} style={{ fontSize: "0.8rem", color: "var(--text-muted)", display: "flex", gap: "6px" }}>
-                          <span style={{ color: "var(--primary)" }}>✓</span> {feat}
-                        </li>
-                      ))}
-                    </ul>
-                    <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-                      {proj.playStore && (
-                        <a href={proj.playStore} target="_blank" rel="noopener noreferrer" className={styles.storeBtn} style={{ padding: "8px 12px", fontSize: "0.75rem", flexGrow: 1 }}>
-                          Play Store
-                        </a>
-                      )}
-                      {proj.appStore && (
-                        <a href={proj.appStore} target="_blank" rel="noopener noreferrer" className={styles.storeBtn} style={{ padding: "8px 12px", fontSize: "0.75rem", flexGrow: 1 }}>
-                          App Store
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Right Column: Sticky Mockup Device */}
-          <div className={styles.mockupContainer}>
-            <div className={styles.phoneShell}>
-              <div className={styles.phoneNotch}></div>
-              
-              {/* Mock Status Bar */}
-              <div className={styles.statusBar}>
-                <span>9:41 AM</span>
-                <div className={styles.statusRight}>
-                  <Smartphone size={12} />
-                  <span>5G</span>
-                  <span style={{ border: "1px solid var(--text-secondary)", padding: "1px 3px", borderRadius: "3px", fontSize: "0.55rem" }}>100%</span>
+                <div>
+                  <h3 className={styles.cardTitle}>{proj.title}</h3>
+                  <span className={styles.cardPlatform} style={{ color: proj.themeColor }}>{proj.metrics.platform}</span>
                 </div>
               </div>
 
-              {/* Inside Phone Screen */}
-              <div className={styles.phoneScreen}>
-                <div className={styles.appHeader}>
-                  <div className={styles.appIcon}>{activeProj.initials}</div>
-                  <div>
-                    <h4 className={styles.appTitle}>{activeProj.title}</h4>
-                    <span className={styles.appPlatform}>{activeProj.metrics.platform}</span>
-                  </div>
-                </div>
 
-                <div className={styles.appMetrics}>
-                  <div className={styles.metricItem}>
-                    <div className={styles.metricValue}>{activeProj.metrics.downloads}</div>
-                    <div className={styles.metricLabel}>Downloads</div>
-                  </div>
-                  <div className={styles.metricItem}>
-                    <div className={styles.metricValue}>{activeProj.metrics.rating}</div>
-                    <div className={styles.metricLabel}>Rating</div>
-                  </div>
-                  <div className={styles.metricItem}>
-                    <div className={styles.metricValue}>FREE</div>
-                    <div className={styles.metricLabel}>License</div>
-                  </div>
-                </div>
+              <p className={styles.cardDescription}>{proj.description}</p>
 
-                <p className={styles.appDescription}>{activeProj.description}</p>
+              <div className={styles.featuresContainer}>
+                {proj.features.map((feat, fIdx) => (
+                  <div key={fIdx} className={styles.featureItem}>
+                    <Check size={14} className={styles.checkIcon} style={{ color: proj.themeColor }} />
+                    <span>{feat}</span>
+                  </div>
+                ))}
+              </div>
 
-                <h5 className={styles.sectionTitle}>Key Features</h5>
-                <ul className={styles.featuresList}>
-                  {activeProj.features.map((feat, fIdx) => (
-                    <li key={fIdx} className={styles.featureItem}>
-                      <span className={styles.bullet}><Check size={12} /></span>
-                      <span>{feat}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Download links inside App Info */}
-                <div className={styles.storeLinks}>
-                  {activeProj.playStore && (
-                    <a
-                      href={activeProj.playStore}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.storeBtn}
-                    >
-                      <Play size={14} style={{ fill: "currentColor" }} /> Get on Google Play
-                    </a>
-                  )}
-                  {activeProj.appStore && (
-                    <a
-                      href={activeProj.appStore}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.storeBtn}
-                    >
-                      <Smartphone size={14} /> Get on App Store
-                    </a>
-                  )}
-                </div>
+              <div className={styles.storeLinks}>
+                {proj.playStore && (
+                  <a href={proj.playStore} target="_blank" rel="noopener noreferrer" className={styles.storeBtn} style={{ background: proj.themeColor }}>
+                    <Play size={16} style={{ fill: "currentColor" }} /> Google Play
+                  </a>
+                )}
+                {proj.appStore && (
+                  <a href={proj.appStore} target="_blank" rel="noopener noreferrer" className={styles.storeBtn} style={{ background: proj.themeColor }}>
+                    <Smartphone size={16} /> App Store
+                  </a>
+                )}
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
-
-      {/* Styled JSX to handle responsiveness specifically for mobile expansion show/hide */}
-      <style jsx global>{`
-        @media (max-width: 900px) {
-          .mobile-only-details {
-            display: block !important;
-          }
-        }
-      `}</style>
     </section>
   );
 }
