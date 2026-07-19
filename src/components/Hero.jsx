@@ -86,7 +86,7 @@ export default function Hero() {
                 View My Work <ArrowRight size={18} />
               </a>
               <a
-                href="/Aaditya_Rajbhar_Resume.pdf"
+                href="/Aaditya_Flutter_Developer.pdf"
                 download
                 className="secondary-btn"
                 title="Download Resume"

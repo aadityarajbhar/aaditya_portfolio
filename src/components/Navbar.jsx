@@ -55,7 +55,7 @@ export default function Navbar() {
           ))}
           <li>
             <a
-              href="/Aaditya_Rajbhar_Resume.pdf"
+              href="/Aaditya_Flutter_Developer.pdf"
               download
               onClick={close}
               className={styles.navLink}

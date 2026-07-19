@@ -111,7 +111,7 @@ export default function Home() {
               style={{ fontSize: "0.85rem", color: "var(--text-muted)" }} className="footer-link">
               Phone
             </a>
-            <a href="/Aaditya_Rajbhar_Resume.pdf" download
+            <a href="/Aaditya_Flutter_Developer.pdf" download
               style={{ fontSize: "0.85rem", color: "var(--accent)" }} className="footer-link">
               Download CV
             </a>
